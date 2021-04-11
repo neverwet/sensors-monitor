@@ -196,7 +196,7 @@ namespace SensorsMonitor
                 lblStatus.Text = "Connected to " + port.PortName;
 
                 lines.Add("CPU " + Math.Round(sensors.cpuTemp).ToString().PadLeft(2) + "*C " + Math.Round(sensors.cpuLoad).ToString().PadLeft(2, ' ') + "%  " +
-                     Math.Round(sensors.cpuFreq / 1000, 1).ToString() + "GHz");
+                     Math.Round(sensors.cpuFreq / 1000, 1).ToString('F1') + "GHz");
 
                 lines.Add("GPU " + Math.Round(sensors.gpuTemp).ToString().PadLeft(2) + "*C " + Math.Round(sensors.gpuLoad).ToString().PadLeft(2, ' ') + "%  " +
                      Math.Round(sensors.gpuFreq / 1000, 1).ToString("F1") + "GHz");
