@@ -49,12 +49,19 @@ namespace SensorsMonitor
             port.RtsEnable = true;
             port.BaudRate = 9600;
 
+            ScanPorts();
+        }
+
+        private void ScanPorts()
+        {
             try
             {
                 string[] ports = SerialPort.GetPortNames();
 
                 var i = 0;
                 var activeIndex = 0;
+
+                cmbPorts.Items.Clear();
 
                 foreach (var p in ports)
                 {
@@ -73,7 +80,8 @@ namespace SensorsMonitor
                 }
 
                 cmbPorts.SelectedIndex = activeIndex;
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 lblStatus.Text = e.Message;
             }
@@ -229,6 +237,7 @@ namespace SensorsMonitor
             {
                 btnConnect.Text = "Connect";
                 lblStatus.Text = ex.Message;
+                ScanPorts();
             }
         }
 
