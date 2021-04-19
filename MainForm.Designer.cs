@@ -97,7 +97,7 @@ namespace SensorsMonitor
             // 
             this.lblCpuTemp.AutoSize = true;
             this.lblCpuTemp.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCpuTemp.Location = new System.Drawing.Point(13, 40);
+            this.lblCpuTemp.Location = new System.Drawing.Point(9, 60);
             this.lblCpuTemp.Name = "lblCpuTemp";
             this.lblCpuTemp.Size = new System.Drawing.Size(64, 16);
             this.lblCpuTemp.TabIndex = 1;
@@ -106,7 +106,7 @@ namespace SensorsMonitor
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(139, 15);
+            this.lblStatus.Location = new System.Drawing.Point(9, 36);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(92, 13);
             this.lblStatus.TabIndex = 2;
@@ -114,7 +114,7 @@ namespace SensorsMonitor
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(261, 12);
+            this.btnConnect.Location = new System.Drawing.Point(139, 12);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 3;
@@ -126,7 +126,7 @@ namespace SensorsMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 187);
+            this.ClientSize = new System.Drawing.Size(352, 169);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblCpuTemp);
