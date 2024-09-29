@@ -22,4 +22,6 @@ See `ArduinoProject\ArduinoProject.ino`.
 
 # Materials
 
-* Arduino PC Monitor - https://www.hackster.io/zakrzu/arduino-pc-monitor-66c07a 
+* Arduino PC Monitor - https://www.hackster.io/zakrzu/arduino-pc-monitor-66c07a
+
+![Board preview](https://hackster.imgix.net/uploads/attachments/256499/lcduino_U1HKTx0pyi.png?auto=compress%2Cformat&w=740&h=555&fit=max)
